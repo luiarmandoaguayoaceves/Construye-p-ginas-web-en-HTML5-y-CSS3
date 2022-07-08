@@ -12,6 +12,7 @@
         fieldset{padding: 10px; border: 1px solid #ccc; width: 420px; margin: 0 auto;}
         legend{text-align: right; font-style: italic; font-size: 20px; font-weight: bold; color: #999;}
         input[type=text], input[type=email], textarea {padding: 5px; font-size: 18px; border: 1px solid #ccc; width: 300px;}
+        td{text-align: right;}
     </style>    
 </head>
 <body>
@@ -20,19 +21,19 @@
             <Legend>Datos Personales</Legend>
             <table>
                 <tr>
-                    <td align="right">Nombre</td>
+                    <td>Nombre</td>
                     <td><input type="text" name="nombre" required autofocus></td>
                 </tr>
                 <tr>
-                    <td align="right">Email:</td>
+                    <td>Email:</td>
                     <td><input type="email" name="correo" id="" required></td>
                 </tr>
                 <tr>
-                    <td align="right">Movil:</td>
+                    <td>Movil:</td>
                     <td><input type="text" name="movil" required pattern="[\d]{3}\s[\d]{3}\s[\d]{4}$" title="Ingrese numero de telefono de la siguiente manera ej: XXX XXX XXXX"></td>
                 </tr>
                 <tr>
-                    <td align="right" valign="top">Mensaje:</td>
+                    <td>Mensaje:</td>
                     <td><textarea name="mensaje" id="" cols="30" rows="10" required></textarea></td>
                 </tr>
                 <tr>

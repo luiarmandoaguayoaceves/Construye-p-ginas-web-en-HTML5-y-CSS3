@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <!-- loop para volver a reproducir -->
+                <video width="320" height="240"   controls loop muted poster="img/waffles.jpg" preload="auto">
+                    <!-- comenzar por mp4 por que ipads no muestra si no esta en ese orden  -->
+                    <source src="video/curso_aprende_a_publicar_paginas_web.mp4" type="video/mp4">
+                    <source src="video/curso_aprende_a_publicar_paginas_web.ogv" type="video/ogg">
+                    <source src="video/curso_aprende_a_publicar_paginas_web.webm" type="video/webm">
+                    <!-- mensaje en caso de que no pueda visualizar ningun formato  -->
+                    <p>Su navegador no es compatible para ver este video</p>
+                </video>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
