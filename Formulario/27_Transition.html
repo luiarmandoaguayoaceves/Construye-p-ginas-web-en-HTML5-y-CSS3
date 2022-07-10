@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <script src="js/prefixfree.js"></script>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            /* este es lo mismo que las tres siguientes lineas */
+            
+            /******** ANIMACION 1********************/
+            
+            /*transition: width 1s 0s ease, height 1s 1s ease, background-color 3s 2s ease; */
+
+            /**************** ANIMACION 2 *********/
+            transition: width 1s 0s cubic-bezier(0.985, -0.385, 0.270, 1.330), height 1s 1s cubic-bezier(0.985, -0.385, 0.270, 1.330), background-color 3s 2s cubic-bezier(0.985, -0.385, 0.270, 1.330); 
+
+            /* transition-property: width, height, background-color;
+            transition-duration: 1s,1s,3s;
+            transition-delay: 0s,1s,2s;
+            transition-timing-function: ease; */
+
+            /* Aceleraciones
+            Linear -> Velocidad constante
+            Ease ->Inicio lento Acelera y final lento
+            Ease-in Inicio lento
+            Ease-out -> Final lento
+            Ease-in-out  -> Inicio lento, final lento
+            Cubic-bezier(n,n,n,n) -> Define la curva de aceleracion con puntos por coordenadas en x y z*/
+        }
+        #div1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: #0f0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
